@@ -6,3 +6,12 @@ resource "aws_vpc" "openredalert_vpc" {
   }
 }
 
+resource "aws_subnet" "openredalert_subnet" {
+  vpc_id            = aws_vpc.openredalert_vpc.id
+  cidr_block        = var.cidr-subnet
+  availability_zone = "eu-central-1a"
+
+  tags = {
+    Name = "${var.ressource_name_tag}Subnet"
+  }
+}
