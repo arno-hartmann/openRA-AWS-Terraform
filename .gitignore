@@ -1,0 +1,11 @@
+.terraform*
+*.tfstate
+*.tfstate.*
+.infracost
+*.asc
+*.lc
+tg_*
+
+.DS_Store
+
+terraform.tfvars
