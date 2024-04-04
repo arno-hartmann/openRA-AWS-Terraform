@@ -16,3 +16,14 @@ variable "ressource_name_tag" {
   type        = string
   description = "tags naming the ressources (disguise if wanted)"
 }
+
+variable "redalert-server-pwd" {
+  type        = string
+  description = "pwd for OpenRA server"
+  sensitive   = true
+}
+
+variable "redalert-release" {
+  type        = string
+  description = "OpenRA Release eg. 20230225"
+}
