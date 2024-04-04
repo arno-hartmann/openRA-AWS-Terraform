@@ -5,3 +5,4 @@ resource "aws_vpc" "openredalert_vpc" {
     Name = "${var.ressource_name_tag}VPC"
   }
 }
+
