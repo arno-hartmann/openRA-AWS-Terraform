@@ -17,6 +17,11 @@ variable "ressource_name_tag" {
   description = "tags naming the ressources (disguise if wanted)"
 }
 
+variable "redalert-server-name" {
+  type        = string
+  description = "Servername displayed in OpenRA-serverlist"
+}
+
 variable "redalert-server-pwd" {
   type        = string
   description = "pwd for OpenRA server"
