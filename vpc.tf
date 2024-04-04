@@ -36,3 +36,8 @@ resource "aws_route_table" "openredalert_route_table" {
     Name = "${var.ressource_name_tag}RouteTable"
   }
 }
+
+resource "aws_route_table_association" "openredalert_subnet_association" {
+  subnet_id      = aws_subnet.openredalert_subnet.id
+  route_table_id = aws_route_table.openredalert_route_table.id
+}
