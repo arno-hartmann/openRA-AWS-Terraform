@@ -9,7 +9,7 @@ resource "aws_instance" "openredalert_instance" {
   user_data                   = data.template_file.openra_user_data.rendered
 
   tags = {
-    Name = "${var.ressource_name_tag}Server"
+    Name = "${var.ressource_name_tag}-Server"
   }
 }
 

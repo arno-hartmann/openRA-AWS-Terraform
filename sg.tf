@@ -1,5 +1,5 @@
 resource "aws_security_group" "openredalert_sg" {
-  name_prefix = "${var.ressource_name_tag}ServerSG"
+  name_prefix = "${var.ressource_name_tag}-ServerSG"
   vpc_id      = aws_vpc.openredalert_vpc.id
 
   ingress {
@@ -18,6 +18,6 @@ resource "aws_security_group" "openredalert_sg" {
   }
 
   tags = {
-    Name = "${var.ressource_name_tag}ServerSG"
+    Name = "${var.ressource_name_tag}-ServerSG"
   }
 }

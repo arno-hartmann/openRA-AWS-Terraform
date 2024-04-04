@@ -2,7 +2,7 @@ resource "aws_vpc" "openredalert_vpc" {
   cidr_block = var.cidr-vpc
 
   tags = {
-    Name = "${var.ressource_name_tag}VPC"
+    Name = "${var.ressource_name_tag}-VPC"
   }
 }
 
@@ -12,7 +12,7 @@ resource "aws_subnet" "openredalert_subnet" {
   availability_zone = "eu-central-1a"
 
   tags = {
-    Name = "${var.ressource_name_tag}Subnet"
+    Name = "${var.ressource_name_tag}-Subnet"
   }
 }
 
@@ -20,7 +20,7 @@ resource "aws_internet_gateway" "openredalert_igw" {
   vpc_id = aws_vpc.openredalert_vpc.id
 
   tags = {
-    Name = "${var.ressource_name_tag}IGW"
+    Name = "${var.ressource_name_tag}-IGW"
   }
 }
 
@@ -33,7 +33,7 @@ resource "aws_route_table" "openredalert_route_table" {
   }
 
   tags = {
-    Name = "${var.ressource_name_tag}RouteTable"
+    Name = "${var.ressource_name_tag}-RouteTable"
   }
 }
 
