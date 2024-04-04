@@ -32,3 +32,8 @@ variable "redalert-release" {
   type        = string
   description = "OpenRA Release eg. 20230225"
 }
+
+variable "instance_type" {
+  type        = string
+  description = "ec2 instance type - t2.micro for map EU, t2.small for Worldmap"
+}
