@@ -15,3 +15,12 @@ resource "aws_subnet" "openredalert_subnet" {
     Name = "${var.ressource_name_tag}Subnet"
   }
 }
+
+resource "aws_internet_gateway" "openredalert_igw" {
+  vpc_id = aws_vpc.openredalert_vpc.id
+
+  tags = {
+    Name = "${var.ressource_name_tag}IGW"
+  }
+}
+
