@@ -7,8 +7,8 @@ Create a file `terraform.vars` to your needs, especially the profile, with the f
 ```
 aws_profile = "Name of the aws profile (credentials)"
 
-cidr-vpc    = "10.0.0.0/28"
-cidr-subnet = "10.0.0.0/29"
+cidr-vpc    = "10.0.0.0/27"
+cidr-subnet = "10.0.0.0/28"
 
 instance_type = "t2.micro"
 
