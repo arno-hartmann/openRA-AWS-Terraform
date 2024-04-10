@@ -2,13 +2,13 @@
 
 ## Setup the infrastucture and gameserver
 
-Setup .aws/credentials
+- Setup .aws/credentials
 
-Login to AWS via SSO
+- Login to AWS via SSO
 
-</br>
 
-Setup the infrastructure with terraform with the following commands:
+
+- Setup the infrastructure with terraform with the following commands:
 
 ```
 terraform init
