@@ -1,6 +1,26 @@
 # openRA-AWS-Terraform
 
+Setup .aws/credentials
+
 Login to AWS via SSO
+
+</br>
+
+Setup the infrastructure with terraform with the following commands:
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+You get the IP as `output` or find the server in the multiplayer overvierw.
+
+Wait about 5 minutes, while the Server is installing.
+
+</br>
+
+During plan and apply you will be asked to set the variables. This can be avoided by creating a file with the variables:
 
 Create a file `terraform.vars` to your needs, especially the profile, with the following settings for the variables:
 
@@ -32,17 +52,3 @@ ressource_name_tag = "OpenRedAlert"
 </br>
 
 `Instance type` "t2.micro" should be sufficient for most maps, "t2.small" is recommended for the big world map or with many players.
-
-</br>
-
-Setup the infrastructure with terraform with the following commands:
-
-```
-terraform init
-terraform plan
-terraform apply
-```
-
-You get the IP as `output` or find the server in the multiplayer overvierw.
-
-Wait about 5 minutes, while the Server is installing
