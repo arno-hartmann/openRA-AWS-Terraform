@@ -2,13 +2,11 @@
 
 ## Setup the infrastucture and gameserver
 
-- Setup .aws/credentials
+1. Setup .aws/credentials
 
-- Login to AWS via SSO
+1. Login to AWS via SSO
 
-
-
-- Setup the infrastructure with terraform with the following commands:
+1. Setup the infrastructure with terraform with the following commands:
 
 ```
 terraform init
@@ -18,9 +16,9 @@ terraform apply
 
 :information_source: During `plan` and `apply` you will be asked to set values for the variables. This can be avoided by creating a file for setting these values (see below).
 
-You get the IP as `output` or find the server by the chosen name (see table of variables below) in the multiplayer overview.
+4. You get the IP as `output` or find the server by the chosen name (see table of variables below) in the multiplayer overview.
 
-Wait about 5 minutes, while the Server is installing for gameserver to be ready.
+1. Wait about 5 minutes, while the Server is installing for gameserver to be ready.
 
 </br>
 
@@ -30,7 +28,7 @@ Wait about 5 minutes, while the Server is installing for gameserver to be ready.
 
 </br>
 
-Create a file `terraform.vars` to your needs, especially the profile, with the following settings for the variables:
+Create a file `terraform.vars` which matches your desired setup with values for the following variables:
 
 ```
 aws_profile = "Name of the aws profile (credentials)"
