@@ -18,7 +18,7 @@ terraform apply
 
 During `plan` and `apply` you will be asked to set values for the variables. This can be avoided by creating a file for setting these values (see below).
 
-You get the IP as `output` or find the server in the multiplayer overview.
+You get the IP as `output` or find the server by the chosen name (see table of variables below) in the multiplayer overview.
 
 Wait about 5 minutes, while the Server is installing for gameserver to be ready.
 
