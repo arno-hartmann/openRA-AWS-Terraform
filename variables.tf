@@ -24,7 +24,7 @@ variable "redalert-server-name" {
 
 variable "redalert-server-pwd" {
   type        = string
-  description = "pwd for OpenRA server"
+  description = "Password to access game on the OpenRA server"
   sensitive   = true
 }
 
