@@ -26,7 +26,7 @@ Wait about 5 minutes, while the Server is installing for gameserver to be ready.
 
 ## Setup variables for easier provisioning
 
-⚠️ The Password variable is not recommended to be saved in a file. Beware of checking in or publishing your variables!
+⚠️ :warning: **The Password variable is not recommended to be saved in a file. Beware of checking in or publishing your variables!**
 
 Create a file `terraform.vars` to your needs, especially the profile, with the following settings for the variables:
 
