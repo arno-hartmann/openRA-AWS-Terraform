@@ -16,7 +16,7 @@ terraform plan
 terraform apply
 ```
 
-During `plan` and `apply` you will be asked to set values for the variables. This can be avoided by creating a file for setting these values (see below).
+:information_source: During `plan` and `apply` you will be asked to set values for the variables. This can be avoided by creating a file for setting these values (see below).
 
 You get the IP as `output` or find the server by the chosen name (see table of variables below) in the multiplayer overview.
 
