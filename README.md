@@ -47,6 +47,10 @@ redalert-release = "20231010"
 ressource_name_tag = "OpenRedAlert"
 ```
 
+</br>
+
+### Table of Variables
+
 | Variable Name        | Description                                       | Example Value         |
 | :------------------- | :------------------------------------------------ | :-------------------- |
 | aws_profile          | Name of the aws profile (credentials)             | "Standard", "Sandbox" |
@@ -59,5 +63,7 @@ ressource_name_tag = "OpenRedAlert"
 | redalert-server-pwd  | Password to access game on the OpenRA server      |                       |
 
 </br>
+
+## Recommended sizing of the ec2 instance
 
 `Instance type` "t2.micro" should be sufficient for most maps, "t2.small" is recommended for the big world map or with many players.
