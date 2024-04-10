@@ -1,5 +1,7 @@
 # openRA-AWS-Terraform
 
+## Setup the infrastucture and gameserver
+
 Setup .aws/credentials
 
 Login to AWS via SSO
@@ -14,13 +16,17 @@ terraform plan
 terraform apply
 ```
 
+During `plan` and `apply` you will be asked to set values for the variables. This can be avoided by creating a file for setting these values (see below).
+
 You get the IP as `output` or find the server in the multiplayer overvierw.
 
-Wait about 5 minutes, while the Server is installing.
+Wait about 5 minutes, while the Server is installing for gameserver to be ready.
 
 </br>
 
-During plan and apply you will be asked to set the variables. This can be avoided by creating a file with the variables:
+## Setup variables for easier provisioning
+
+⚠️ The Password variable is not recommended to be saved in a file. Beware of checking in or publishing your variables!
 
 Create a file `terraform.vars` to your needs, especially the profile, with the following settings for the variables:
 
@@ -48,6 +54,7 @@ ressource_name_tag = "OpenRedAlert"
 | redalert-server-name | Name which shows on the serverlist of openRA      | "MyAwesomeGame"       |
 | redalert-release     | version of the openRA server                      | "20231010"            |
 | ressource_name_tag   | Name that will show in the aws ressources nametag | "OpenRedAlert"        |
+| redalert-server-pwd  | Password to access game on the OpenRA server      |                       |
 
 </br>
 
