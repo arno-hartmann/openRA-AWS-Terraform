@@ -54,8 +54,8 @@ ressource_name_tag = "OpenRedAlert"
 | Variable Name        | Description                                       | Example Value         |
 | :------------------- | :------------------------------------------------ | :-------------------- |
 | aws_profile          | Name of the aws profile (credentials)             | "Standard", "Sandbox" |
-| cidr-vpc             | CIDR of the VPC                                   | "10.0.0.0/28"         |
-| cidr-subnet          | CIDR of the Subnet                                | "10.0.0.0/29"         |
+| cidr-vpc             | CIDR of the VPC                                   | "10.0.0.0/27"         |
+| cidr-subnet          | CIDR of the Subnet                                | "10.0.0.0/28"         |
 | instance_type        | ec2 instance type                                 | "t2.micro"            |
 | redalert-server-name | Name which shows on the serverlist of openRA      | "MyAwesomeGame"       |
 | redalert-release     | version of the openRA server                      | "20231010"            |
