@@ -4,7 +4,7 @@
 
 1. Setup .aws/credentials
 
-1. Login to AWS via SSO
+1. Login to AWS via CLI
 
 1. Setup the infrastructure with terraform with the following commands:
 
