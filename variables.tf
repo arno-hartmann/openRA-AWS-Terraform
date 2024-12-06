@@ -35,5 +35,5 @@ variable "redalert-release" {
 
 variable "instance_type" {
   type        = string
-  description = "ec2 instance type - t2.micro for map EU, t2.small for Worldmap, tryout c6gn.large for big maps"
+  description = "ec2 instance type - t2.micro for map EU, t2.small for Worldmap, tryout c6i.large for big maps"
 }
