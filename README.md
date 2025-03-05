@@ -40,7 +40,7 @@ instance_type = "t2.micro"
 
 redalert-server-name = "OpenRA"
 
-redalert-release = "20231010"
+redalert-release = "20250303"
 
 ressource_name_tag = "OpenRedAlert"
 ```
@@ -56,7 +56,7 @@ ressource_name_tag = "OpenRedAlert"
 | cidr-subnet          | CIDR of the Subnet                                | "10.0.0.0/28"         |
 | instance_type        | ec2 instance type                                 | "t2.micro"            |
 | redalert-server-name | Name which shows on the serverlist of openRA      | "MyAwesomeGame"       |
-| redalert-release     | version of the openRA server                      | "20231010"            |
+| redalert-release     | version of the openRA server                      | "20250303"            |
 | ressource_name_tag   | Name that will show in the aws ressources nametag | "OpenRedAlert"        |
 | redalert-server-pwd  | Password to access game on the OpenRA server      |                       |
 
