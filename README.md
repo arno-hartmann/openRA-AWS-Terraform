@@ -64,4 +64,4 @@ ressource_name_tag = "OpenRedAlert"
 
 ## Recommended sizing of the ec2 instance
 
-`Instance type` "t2.micro" should be sufficient for most maps, "t2.small" is recommended for the big world map or with many players.
+`Instance type` "t2.micro" should be sufficient for most maps, more powerful instances (e.g."c7i.large") are recommended for the big world map or with many players. Choose x86_64 instance types as this setup uses the x86_64-AppImage!
