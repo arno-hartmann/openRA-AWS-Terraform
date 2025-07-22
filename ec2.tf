@@ -1,6 +1,6 @@
 
 resource "aws_instance" "openredalert_instance" {
-  ami           = data.aws_ami.ubuntu-linux-2204.id
+  ami           = data.aws_ami.ubuntu-linux.id
   instance_type = var.instance_type
 
   associate_public_ip_address = true

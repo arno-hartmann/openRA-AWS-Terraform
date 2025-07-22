@@ -10,7 +10,7 @@ data "template_file" "openra_user_data" {
               EOF
 }
 
-data "aws_ami" "ubuntu-linux-2204" {
+data "aws_ami" "ubuntu-linux" {
   most_recent = true
   owners      = ["099720109477"] # Canonical
   filter {
